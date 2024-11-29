@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import ToggleTheme from "./components/ToggleTheme"
 import NotFound from "./components/NotFound"
+import Navbar from "./components/Navbar"
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <div className="flex flex-col h-screen">
       <BrowserRouter>
         <div className="flex-initial bg-base-100 min-h-[5rem]">
-          <ToggleTheme/>
+          <Navbar/>
         </div>
         <div className="flex flex-col bg-neutral flex-auto items-center">
           <Routes>
@@ -17,7 +18,7 @@ function App() {
           </Routes>
         </div>
         <div className="flex-initial bg-base-100 min-h-[5rem]">
-
+        <ToggleTheme/>
         </div>
       </BrowserRouter>
     </div>
