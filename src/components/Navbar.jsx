@@ -1,4 +1,5 @@
 import Search from "./Search";
+import NavItems from "./NavItems";
 
 function Navbar() {
   return (
@@ -11,7 +12,7 @@ function Navbar() {
           <Search/>
         </div>
         <div className="flex-1 bg-yellow-400">
-
+          <NavItems/>
         </div>
       </div>
     </nav>
