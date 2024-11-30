@@ -8,7 +8,7 @@ function Search() {
 
   useEffect(() => {
     if (!dropdownOpen) {
-      dropdownInput.current.blur();
+      document.activeElement.blur();
     }
   }, [dropdownOpen]);
 
