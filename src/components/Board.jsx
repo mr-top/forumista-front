@@ -10,7 +10,7 @@ function Board(props) {
       classesY = 'min-h-[10rem]';
       break;
     case 'large':
-      classesX = 'w-5/6 sm:w-5/6';
+      classesX = 'w-11/12';
       classesY = 'min-h-[10rem]';
       break;
     default:

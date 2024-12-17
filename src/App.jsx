@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ToggleTheme from "./components/ToggleTheme"
 import NotFound from "./components/NotFound"
 import Navbar from "./components/Navbar"
+import Home from './components/Home'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         </div>
         <div className="flex flex-col bg-neutral flex-auto items-center">
           <Routes>
+            <Route path='/home' element={<Home />}/>
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
