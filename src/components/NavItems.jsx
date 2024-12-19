@@ -1,16 +1,7 @@
-import { useState, useEffect } from "react";
-
 import NotifsItem from "./NotifsItem";
 import FriendsItem from "./FriendsItem";
 
 function NavItems(props) {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  useEffect(() => {
-    if (!dropdownOpen) {
-      document.activeElement.blur();
-    }
-  }, [dropdownOpen]);
 
   return (
     <div className="flex flex-row w-full justify-end items-center space-x-3">

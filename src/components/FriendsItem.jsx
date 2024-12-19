@@ -35,7 +35,7 @@ function FriendsItem() {
         <img className="h-6 w-6" src="https://img.icons8.com/external-wanicon-lineal-wanicon/64/external-friend-friendship-wanicon-lineal-wanicon.png" alt="external-friend-friendship-wanicon-lineal-wanicon" />
         <div className={`h-0.5 w-6 ${unchecked ? 'bg-info' : 'bg-gray-300'}`} />
       </div>
-      <div tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-80 p-2 shadow">
+      <div tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-64 p-2 shadow">
         <h2>Friend Requests</h2>
         {list.map((item, idx) => {
           return <p key={idx}>{item}</p>

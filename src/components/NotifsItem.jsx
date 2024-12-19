@@ -37,7 +37,7 @@ function NotifsItem() {
         </svg>
         <div className={`h-0.5 w-6 ${unchecked ? 'bg-info' : 'bg-gray-300'}`} />
       </div>
-      <div tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-80 p-2 shadow">
+      <div tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-64 p-2 shadow">
         <h2>Notifications</h2>
         {list.map((item, idx) => {
           return <p key={idx}>{item}</p>

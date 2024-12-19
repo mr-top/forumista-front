@@ -1,5 +1,5 @@
 function Board(props) {
-  const { option, children } = props;
+  const { option, extraClass, children } = props;
 
   let classesX;
   let classesY;
@@ -21,7 +21,7 @@ function Board(props) {
   return (
     <>
     <div className={`flex flex-row flex-auto items-center my-10 ${classesX}`}>
-      <div className={`flex-auto bg-base-100 rounded-md ${classesY}`}>
+      <div className={`flex-auto bg-base-100 rounded-md ${classesY} ${extraClass}`}>
         {children}
       </div>
     </div>
