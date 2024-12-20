@@ -7,15 +7,15 @@ function Board(props) {
   switch (option) {
     case 'small':
       classesX = 'w-4/6 sm:w-2/6';
-      classesY = 'min-h-[10rem]';
+      classesY = 'min-h-[20rem] max-h-[30rem]';
       break;
     case 'large':
       classesX = 'w-11/12';
-      classesY = 'min-h-[10rem]';
+      classesY = 'min-h-[20rem] max-h-[30rem]';
       break;
     default:
       classesX = 'w-5/6 sm:w-4/6';
-      classesY = 'min-h-[10rem]';
+      classesY = 'min-h-[20rem] max-h-[30rem]';
   }
 
   return (

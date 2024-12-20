@@ -16,10 +16,8 @@ function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col basis-3/4 md:basis-3/6">
-          <div className="basis-full bg-red-400">
-            <Posts/>
-          </div>
+        <div className="basis-3/4 md:basis-3/6">
+          <Posts/>
         </div>
 
         <div className="flex-col hidden md:flex md:basis-2/6">
