@@ -1,4 +1,5 @@
 import Board from "./Board";
+import Posts from './Posts';
 
 function Home() {
   return (
@@ -17,7 +18,7 @@ function Home() {
 
         <div className="flex flex-col basis-3/4 md:basis-3/6">
           <div className="basis-full bg-red-400">
-            Main
+            <Posts/>
           </div>
         </div>
 
