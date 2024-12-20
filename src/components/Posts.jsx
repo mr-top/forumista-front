@@ -1,8 +1,10 @@
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
 
+import Post from "./Post";
+
 function Posts () {
   const postsRef = useRef(null);
-  const [items, setItems] = useState([`post ${Math.floor(Math.random() * 100)}`, `post ${Math.floor(Math.random() * 100)}`, `post ${Math.floor(Math.random() * 100)}`, `post ${Math.floor(Math.random() * 100)}`, `post ${Math.floor(Math.random() * 100)}`, `post ${Math.floor(Math.random() * 100)}`, `post ${Math.floor(Math.random() * 100)}`, `post ${Math.floor(Math.random() * 100)}`, `post ${Math.floor(Math.random() * 100)}`, `post ${Math.floor(Math.random() * 100)}`]);
+  const [items, setItems] = useState(['', '']);
   const [isLoading, setIsLoading] = useState(false);
   const [page, setPage] = useState(1);
 
@@ -46,8 +48,8 @@ function Posts () {
   }
 
   return (
-    <div ref={postsRef} className="h-full overflow-y-scroll bg-red-400">
-      {items.map((post, idx) => <p key={idx} className="h-16">{post}</p>)}
+    <div ref={postsRef} className="h-full overflow-y-scroll space-y-2 bg-red-400">
+      {items.map((post, idx) => <Post postId={idx}/>)}
       {isLoading && <p>Fetching more posts</p>}
     </div>
   )
