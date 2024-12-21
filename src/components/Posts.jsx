@@ -48,7 +48,7 @@ function Posts () {
   }
 
   return (
-    <div ref={postsRef} className="h-full overflow-y-scroll space-y-2 bg-red-400">
+    <div ref={postsRef} className="h-full overflow-y-scroll space-y-2">
       {items.map((post, idx) => <Post postId={idx}/>)}
       {isLoading && <p>Fetching more posts</p>}
     </div>

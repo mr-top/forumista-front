@@ -11,7 +11,7 @@ function Board(props) {
       break;
     case 'large':
       classesX = 'w-11/12';
-      classesY = 'min-h-[20rem] max-h-[30rem]';
+      classesY = 'min-h-[44rem] max-h-[48rem]';
       break;
     default:
       classesX = 'w-5/6 sm:w-4/6';
