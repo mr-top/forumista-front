@@ -1,5 +1,7 @@
 import Board from "./Board";
 import Posts from './Posts';
+import Friends from "./Friends";
+import { Outlet } from "react-router-dom";
 
 function Home() {
   return (
@@ -17,12 +19,12 @@ function Home() {
         </div>
 
         <div className="basis-3/4 md:basis-3/6">
-          <Posts/>
+          <Outlet/>
         </div>
 
         <div className="flex-col hidden md:flex md:basis-2/6">
-          <div className="basis-2/6 bg-blue-700">
-            Friends
+          <div className="basis-2/6">
+            <Friends/>
           </div>
           <div className="basis-4/6 bg-blue-400">
             Live Chat
